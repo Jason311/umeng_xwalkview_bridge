@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="30dp">
+
+    <Button
+        android:id="@+id/process_event_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="EVENT打点"/>
+
+    <Button
+        android:id="@+id/process_thread_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="开启五个线程交叉event"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/process_stop_thread_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="停止五个线程交叉event"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/process_stop_process_btn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="杀死该进程"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

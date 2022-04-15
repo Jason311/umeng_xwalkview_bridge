@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context=".visual.Test">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text_ana"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_test_analytics_signin"
+                android:onClick="onClick"
+                android:text="@string/signin"/>
+
+            <Button
+                android:id="@+id/umeng_test_analytics_signoff"
+                android:onClick="onClick"
+                android:text="@string/signoff"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_test_analytics_event"
+                android:onClick="onClick"
+                android:text="@string/normal_event"/>
+
+            <Button
+                android:id="@+id/umeng_test_analytics_ekv"
+                android:onClick="onClick"
+                android:text="@string/kv_event"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/umeng_test_analytics_duration"
+            android:layout_width="fill_parent"
+            android:onClick="onClick"
+            android:text="@string/event_duration"/>
+
+        <Button
+            android:id="@+id/umeng_test_analytics_make_crash"
+            android:onClick="onClick"
+            android:text="@string/make_crash"/>
+
+        <Button
+            android:id="@+id/umeng_test_analytics_js_analytic"
+            android:onClick="onClick"
+            android:text="@string/js_in_webview"/>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_test_analytics_fragment_stack"
+                android:layout_width="fill_parent"
+                android:onClick="onClick"
+                android:text="@string/page_stack"/>
+
+            <Button
+                android:id="@+id/umeng_test_analytics_fragment_tabs"
+                android:layout_width="fill_parent"
+                android:onClick="onClick"
+                android:text="@string/page_tabs"/>
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text_dplus"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_test_event_dplus_nomal"
+                android:layout_width="fill_parent"
+                android:onClick="onClick"
+                android:text="@string/event_dplus_nomal"/>
+
+            <Button
+                android:id="@+id/umeng_test_event_dplus"
+                android:layout_width="fill_parent"
+                android:onClick="onClick"
+                android:text="@string/event_dplus"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_test_dplus_set_supper"
+                android:onClick="onClick"
+                android:text="@string/set_supper"/>
+
+            <Button
+                android:id="@+id/umeng_test_dplus_get_suppers"
+                android:layout_width="fill_parent"
+                android:onClick="onClick"
+                android:text="@string/get_suppers"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_test_getdata_test"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="获取数据"/>
+        </TableRow>
+
+
+        <Button
+            android:id="@+id/umeng_test_clear_suppers"
+            android:onClick="onClick"
+            android:text="@string/clear_suppers"/>
+
+        <Button
+            android:id="@+id/umeng_test_first_launch_event"
+            android:onClick="onClick"
+            android:text="@string/set_first_launch_event"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/umeng_test_autobinding_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="autobinding_note"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:id="@+id/umeng_test_autobinding_imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClick"
+                android:src="@drawable/icon"/>
+
+            <TextView
+                android:id="@+id/umeng_test_autobinding_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="autobinding_textview"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:id="@+id/umeng_test_autobinding_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="autobinding_edittext"/>
+
+            <Button
+                android:id="@+id/umeng_test_autobinding_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="autobinding_button"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="autobinding_togglebutton"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="autobinding_checkbox"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="autobinding_radiobutton"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</ScrollView>

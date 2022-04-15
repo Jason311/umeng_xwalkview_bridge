@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bgj">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:background="#fe3e3e">
+            <Button
+                android:id="@+id/umeng_example_analytics_process_activity1"
+                android:onClick="onButtonClick"
+                android:text="多进程Activity1"/>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_process_activity2"
+                android:onClick="onButtonClick"
+                android:text="多进程Activity2"/>
+        </TableRow>
+
+        <TableRow
+            android:background="#fe3e3e">
+            <Button
+                android:id="@+id/umeng_example_analytics_process_service"
+                android:onClick="onButtonClick"
+                android:text="启动多进程Service"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_signinDefalut"
+                android:onClick="onButtonClick"
+                android:text="signinDefalut"/>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_signin"
+                android:onClick="onButtonClick"
+                android:text="signin"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/umeng_example_analytics_signoff"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:onClick="onButtonClick"
+            android:text="@string/signoff"/>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_event"
+                android:onClick="onButtonClick"
+                android:text="@string/normal_event"/>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_ekv"
+                android:onClick="onButtonClick"
+                android:text="@string/kv_event"/>
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_duration"
+                android:layout_width="fill_parent"
+                android:onClick="onButtonClick"
+                android:text="@string/event_duration"/>
+
+            <Button
+                android:id="@+id/ekvFive"
+                android:onClick="onButtonClick"
+                android:text="event超过5000"/>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ekvT"
+                android:onClick="onButtonClick"
+                android:text="event20"/>
+
+            <Button
+                android:id="@+id/gkvDplus"
+                android:onClick="onButtonClick"
+                android:text="游戏track事件"/>
+        </TableRow>
+
+
+        <Button
+            android:id="@+id/umeng_example_analytics_make_crash"
+            android:onClick="onButtonClick"
+            android:text="@string/make_crash"/>
+
+        <Button
+            android:id="@+id/umeng_example_analytics_js_analytic"
+            android:onClick="onButtonClick"
+            android:text="@string/js_in_webview"/>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_fragment_stack"
+                android:layout_width="fill_parent"
+                android:onClick="onButtonClick"
+                android:text="@string/page_stack"/>
+
+            <Button
+                android:id="@+id/umeng_example_analytics_fragment_tabs"
+                android:layout_width="fill_parent"
+                android:onClick="onButtonClick"
+                android:text="@string/page_tabs"/>
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/eventPa"
+                android:onClick="onButtonClick"
+                android:text="event参数"/>
+
+            <Button
+                android:id="@+id/ekvpa"
+                android:onClick="onButtonClick"
+                android:text="ekv参数"/>
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/reportError"
+                android:onClick="onButtonClick"
+                android:text="reportError"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="DeepLink"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnAnaluticsDeepLinked"
+                android:onClick="onButtonClick"
+                android:text="deeplink"/>
+
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
